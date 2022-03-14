@@ -5,15 +5,15 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["backend/content.js"]
     }
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["./backend/background.js"]
   },
   "browser_action": {
     "default_icon": "./assets/r.png",
-    "default_popup": "./assets/popup.html",
+    "default_popup": "./frontend/index.js",
     "default_title": "A popup will come here"
   }
 }

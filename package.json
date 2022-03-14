@@ -1,0 +1,14 @@
+{
+  "name": "resumehelper_ce",
+  "version": "1.0.0",
+  "description": "Helps people disect job descriptions in order to create competitive resumes",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MA Labs",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
