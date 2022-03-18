@@ -4,9 +4,9 @@ function Popup() {
   return (
     <div className="popup">
       <header>
-        <p>
+        <h1>
           Resume Helper
-        </p>
+        </h1>
       </header>
     </div>
   );
