@@ -13,7 +13,8 @@
   },
   "browser_action": {
     "default_icon": "./assets/r.png",
-    "default_popup": "./frontend/index.js",
+    "default_popup": "./dist/index.html",
     "default_title": "A popup will come here"
-  }
+  },
+  "content_security_policy": "script-src 'self' 'sha256-fdAfMKZtCTRPKMRznGwonJHC++vCCrQS7XFnVrzSXAE=' 'sha256-YD8w9VLrdvqI5/tFVmpT+1337ly+e/JvPrkRxYZo/w4='; object-src 'self';"
 }
