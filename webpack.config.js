@@ -14,25 +14,23 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devServer: {
-    contentBase: './dist',
-    open: true
-  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(jsx|js)$/,
+        include: path.resolve(__dirname, 'src'),
         exclude: /node_modules/,
-        use: {
+        use: [{
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
+            presets: [
+              ['@babel/preset-env', {
+                "targets": "defaults"
+              }],
+              '@babel/preset-react'
+            ]
           }
-        }
-      },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        }]
       }
     ]
   },
